@@ -119,19 +119,6 @@ a.active-category {
   width: 204px;
 }
 
-/* .cart-item-no {
-  position: absolute;
-  top: 8px;
-  right: -8px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  color: white;
-  justify-content: center;
-  align-items: center;
-} */
-
 .cart-item-no.show {
   display: flex;
   position: absolute;
@@ -265,7 +252,6 @@ ul.color > .color-green {
   padding: 32px 16px;
   display: flex;
   flex-direction: column;
-  /* max-width: 280px; */
   gap: 32px;
 }
 

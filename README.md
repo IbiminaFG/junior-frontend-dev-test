@@ -15,7 +15,7 @@ This test is a simple ecommerce site with a checkout button integrated with pays
         -data.js
         -index.css
 
-The images folder contains all the images used in the project. The components contains all the components used. The pages folder contains all the pages used in routing.
+The images folder contains all the images used in the project. The components contains all the components used. The pages folder contains all the pages used in routing. data.js contains all the products.
 
 ## 3. Challenge
 

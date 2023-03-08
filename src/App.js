@@ -6,7 +6,6 @@ import Main from "./pages/Main";
 import Cart from "./pages/Cart";
 import Pdp from "./pages/Pdp";
 import Checkout from "./pages/Checkout";
-// import data from "./data";
 
 function App() {
   const [cartItems, setCartItems] = React.useState([]);

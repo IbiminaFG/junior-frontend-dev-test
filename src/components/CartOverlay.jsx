@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function CartOverlay({ cartItems, onAdd, onRemove, open, menuRef }) {
-  const itemsPrice = cartItems?.reduce((a, c) => a + c.price * c.qty, 0);
+  const itemsPrice = cartItems?.reduce((a, c) => a + c.price * c.qty, 0); // gets the total price
 
   const cartItemElement = cartItems?.map((item) => (
     <div className="product">

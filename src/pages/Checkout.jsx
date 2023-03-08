@@ -5,10 +5,10 @@ import PaystackPop from "@paystack/inline-js";
 function Checkout({ itemsPrice }) {
   const [inputData, setInputData] = React.useState({
     email: "",
-    amount: itemsPrice,
+    amount: itemsPrice, //initialises the amount value to the total price
     firstName: "",
     lastName: "",
-  });
+  }); // state to handle the inputs
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -16,7 +16,7 @@ function Checkout({ itemsPrice }) {
       ...prevState,
       [name]: value,
     }));
-  }
+  } //function thats modifies the state on the change of an input value
 
   function payWithPaystack(e) {
     e.preventDefault();

@@ -4,10 +4,10 @@ import CartOverlay from "../components/CartOverlay";
 import { Link } from "react-router-dom";
 
 function Cart({ cartItems, onAdd, onRemove, open, menuRef }) {
-  const itemsPrice = cartItems?.reduce((a, c) => a + c.price * c.qty, 0);
-  const taxPrice = itemsPrice * 0.21;
+  const itemsPrice = cartItems?.reduce((a, c) => a + c.price * c.qty, 0); //gets the total price
+  const taxPrice = itemsPrice * 0.21; //solves for the tax
 
-  let quantity = 0;
+  let quantity = 0; //gets the total quantity of products to purchase
   cartItems.forEach((element) => {
     return (quantity += element.qty);
   });
